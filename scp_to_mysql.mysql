@@ -1,0 +1,42 @@
+TRUNCATE TABLE scpdoclist;
+LOAD DATA local infile 'D:\\Tableau\\Sources\\ClinicalOps\\SurvivorshipCarePlans\\scpdoclist.csv' 
+INTO table scpdoclist 
+FIELDS TERMINATED BY ','  
+OPTIONALLY ENCLOSED BY '"' 
+IGNORE 2 LINES 
+(name,mrn,docname,@ed,dictated_by,@cd,created_by,@td,transcribed_by,@ad,approved_by,@scd,scpref_order_by,object_status) 
+SET encounter_date=str_to_date(@ed,'%m/%d/%Y'),
+created_date=str_to_date(@cd,'%m/%d/%Y'),
+transcribed_date=str_to_date(@td,'%m/%d/%Y'),
+approved_date=str_to_date(@ad,'%m/%d/%Y'),
+scpref_order_created_on=str_to_date(@scd,'%m/%d/%Y')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
