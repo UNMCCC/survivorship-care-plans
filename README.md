@@ -16,6 +16,8 @@ A survivorship care plan lifecycle starts during the patient visit with his/her 
 
 See the lifecycle of the SCP creation overview in a simple graph.  The time flows from top to bottom. Once a provider approves the SCP, the process is over. The goal is to monitor how many SCP are created, and how long it takes to do so.
 
+![SCP lifecycle timeline](https://github.com/UNMCCC/survivorship-care-plans/blob/master/doc_images/SCP_lifecycle.PNG)
+
 Our SCP teams make a record of the SCP status and documents at each time of the process in the EMR.
 With the help of the code below, we automate the SCP related data extraction from *Mosaiq* to see when a provider issued a SCP, the type of SCP, when the SCP team transcribed the plan, when was the SCP was approved and when was the first patient appointment.
 The data extracted daily is staged on a table. Our Tableau visualization daily reads the new data and serves to the committee. A Tableau story offers several data views that reflect the transition time between the steps described above about the lifecycle of each SCP.
