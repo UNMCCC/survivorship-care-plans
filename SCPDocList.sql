@@ -59,5 +59,6 @@ INNER JOIN dbo.CPT  ON ObsReq.Hsp_Code=CPT.Hsp_Code
 
 WHERE prompt.pgroup = 'ESC7' and prompt.text like '%SCP%'   -- Prompt Text = Name of document
   AND CPT.HSP_Code like '%Surv%'
+  AND Object.Pat_ID1 <> 11526 -- sample 
   AND Orders.version = 0
 
