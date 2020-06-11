@@ -61,4 +61,5 @@ WHERE prompt.pgroup = 'ESC7' and prompt.text like '%SCP%'   -- Prompt Text = Nam
   AND CPT.HSP_Code like '%Surv%'
   AND Object.Pat_ID1 <> 11526 -- sample 
   AND Orders.version = 0
+  AND Orders.Status_Enum = 3 -- completed referals
 
